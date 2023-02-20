@@ -17,3 +17,17 @@
   .button-section {
     flex: 0 0 auto;
   }
+
+  .text-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .text-container p {
+    margin: 0;
+  }
