@@ -1,0 +1,19 @@
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .button-section {
+    flex: 0 0 auto;
+  }
