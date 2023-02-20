@@ -18,16 +18,44 @@ li {
 }
 
 .flexbox-container {
-    padding: 200px;
+    padding: 100px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:cadetblue
+    flex-direction: row;
+  
+    background-color:cadetblue;
+    flex: 1;
+    flex-wrap: wrap;
     
 
 }
 
-.button-section {
+.text-section {
+    width: 50%;
+    display: flex;
     align-self: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
+
+.button-section {
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    padding: 10px;
+    
+   
+   
+
+}
+
+.image-section {
+    display: flex;
+    padding: 24px;
+    align-self: center;
+    justify-content: center;
+    flex: 3;
+    
+    
+}
+
