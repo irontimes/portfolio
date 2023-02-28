@@ -1,3 +1,11 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,7 +45,6 @@ li {
 
 .button {
     display: flex;
-    padding: 400px;
     justify-content: center;
     margin-top: 24px; 
 
@@ -54,3 +61,20 @@ li {
       
 }
 
+.text-container {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 24px;
+
+}
+
+.image-links-container {
+    display: flex;
+    justify-content: center;
+}
+
+.text-sections-container {
+    display: flex;
+    justify-content: center;
+}
