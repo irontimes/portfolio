@@ -1,5 +1,11 @@
 body {
   font-family: 'Roboto', sans-serif;
+  color: rgb(37, 35, 35);
+  
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -12,25 +18,42 @@ nav {
     align-items: center;
     height: 50px;
     padding: 10px;
+
+    
 }
+
+
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    margin-right: 24px;
+  }
+  
+  nav a:hover {
+    color: rgb(133, 125, 125); /* or any other color */
+  }
+
+
+
 
 ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-li {
-    margin: 0;
-    padding: 24px;
 
-}
 
 .flexbox-container {
     
-    padding: 100px;
+    padding: 24px;
     display: flex;
-    background-color:cadetblue;
-    align-items: center;
+    background-color:rgb(201, 202, 202, 0.3);
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
      
 
 }
@@ -39,16 +62,35 @@ li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    flex: 2;
-    
+    align-self: center;
+    align-content: center;
+    min-height: 100%;
+    margin: 0;    
+    flex: 1;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px; 
+.text-section {
+    text-align: justify;
+    font-weight: 44%;
+}
 
+.text-section h2 {
+    margin: 0;
+    font-weight: 200;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+}
+
+.first-contact-button {
+    transition: color 0.7s ease-in-out;
+    margin-right: 24px;
+     
+
+}
+
+.first-contact-button:hover {
+    color: rgb(133, 125, 125); /* or any other color */
 }
 
 .image-section {
@@ -56,10 +98,24 @@ li {
     padding: 24px;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 24px;
+    align-items: center;
     flex: 1 0 200px;
-    padding: 100px;
+    
+    
+    
       
+}
+
+.image-section img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    max-width: 1700px;
+    max-height: 200px;
+    object-fit: cover;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
 }
 
 .text-container {
@@ -70,17 +126,67 @@ li {
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 24px;
-
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.image-links-container {
+.text-container:hover {
+    opacity: 0.7;
+    filter: saturate(150%) hue-rotate(-20deg);
+  }
+
+  .text-container a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .image-links-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 24px;
-    gap: 24px;
     text-align: center;
+    opacity: 1;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
+
+.inset-podcast-logo {
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  margin-top: 66%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  bottom: 0;
+  scale: 50%;
+  border-radius: 77px;
+
+} 
+
+.image-links-container h3 {
+    letter-spacing: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+
+}
+
+.image-links-container p {
+    width: 450px;
+
+}
+
+.image-links-container img:hover {
+    opacity: 0.7;
+    filter: brightness(90%) saturate(80%) hue-rotate(-10deg);
+    transition: opacity 0.3s ease-in-out;
+  }
+
+
 
 .text-sections-container {
     display: flex;
@@ -88,16 +194,31 @@ li {
 }
 
 .image-link img {
-    width: 300px;
-    height: 200px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 500px;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
     border-radius: 10px;
     object-fit: cover;
-    
-    
   }
 
   .quote-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #ccc;
+  }
+  
+  .quote-text::after {
+    content: "\A-Peter F Hamilton";
+    font-style: italic;
+    margin-top: 16px;
+    font-size: 18px;
+    display: block;
   }
