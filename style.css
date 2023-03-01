@@ -82,14 +82,15 @@ ul {
     opacity: 0.7;
 }
 
-.first-contact-button {
-    transition: color 0.7s ease-in-out;
+.text-section button {
+    transition: color 1s ease-in-out;
     margin-right: 24px;
+    border: none;
      
 
 }
 
-.first-contact-button:hover {
+.text-section button:hover {
     color: rgb(133, 125, 125); /* or any other color */
 }
 
@@ -127,12 +128,12 @@ ul {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 24px;
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .text-container:hover {
     opacity: 0.7;
-    filter: saturate(150%) hue-rotate(-20deg);
+    filter: saturate(200%) hue-rotate(-20deg);
   }
 
   .text-container a {
@@ -172,7 +173,13 @@ ul {
     letter-spacing: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: letter-spacing 0.5s ease-in-out;
 
+}
+
+.image-links-container h3:hover {
+    letter-spacing: 0.2em;
 }
 
 .image-links-container p {
@@ -203,7 +210,7 @@ ul {
     object-fit: cover;
   }
 
-  .quote-container {
+.quote-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,10 +222,82 @@ ul {
     border-left: 6px solid #ccc;
   }
   
-  .quote-text::after {
+.quote-text::after {
     content: "\A-Peter F Hamilton";
     font-style: italic;
     margin-top: 16px;
     font-size: 18px;
     display: block;
   }
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cta-text h2 {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: -50%;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.cta-button a {
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s ease-in-out;
+    letter-spacing: 0.1em;
+    transition: letter-spacing 1s ease-in-out;
+}
+
+.cta-button a:hover {
+    letter-spacing: 0.2em;
+}
+
+.cta-button a:hover {
+    color: grey;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+
+
+.social-media-footer img {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    border-radius: 25px;
+    gap: 25px;
+    align-self: center;
+    box-shadow: 2px 2px 5px rgba(227, 236, 231, 0.3);
+    margin: 20px;
+    transition: box-shadow 0.7s ease-in-out;
+
+}
+
+.social-media-footer img:hover {
+    box-shadow: 0px 0px 10px 3px rgba(86, 105, 112, 0.8);
+  }
+
+.social-media-footer p {
+    text-align: center;
+    text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+
