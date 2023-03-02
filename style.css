@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: rgb(37, 35, 35);
   
+  
 }
 
 html {
@@ -54,7 +55,10 @@ ul {
     border-radius: 10px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: column;
   }
+
+
 
 .text-section {
     display: flex;
@@ -70,12 +74,36 @@ ul {
 .text-section {
     text-align: justify;
     font-weight: 44%;
+    flex-direction: column; /* or row */
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section a {
+  text-decoration: none;
+  color: rgb(37, 121, 72);
+  transition: color 1s ease-in-out, transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.text-section a:hover {
+  color: rgb(5, 5, 5);
+  transform: scale(1.05);
+}
+
+.text-section a:hover:not(:active) {
+  transform: scale(1.05);
+}
+
+.text-section a:not(:hover) {
+  transform: scale(1);
 }
 
 .text-section h2 {
+    display: flex;
+    text-align: center;
     margin: 0;
     font-weight: 200;
-    letter-spacing: 7px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 0.7;
 }
@@ -84,7 +112,9 @@ ul {
     transition: color 1s ease-in-out;
     margin-right: 24px;
     border-radius: 5px;
-    border-color: ;
+    background:linear-gradient(to bottom right, #ffffff, rgba(201, 202, 202, 0.3));
+    text-decoration: none;
+    border: 0;
 }
 
 .text-section button:hover {
@@ -98,6 +128,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex: 1 0 200px;
+    flex-wrap: wrap;
     
     
     
@@ -108,9 +139,9 @@ ul {
     display: flex;
     width: 100%;
     height: auto;
-    border-radius: 25px;
-    max-width: 1700px;
     max-height: 200px;
+    border-radius: 25px;
+    flex: 1;
     object-fit: cover;
     flex-wrap: wrap;
     box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
@@ -203,12 +234,21 @@ ul {
 
 /* Below class controls podcast inlay transition */
 
-.image-links-container img:hover {
+
+
+  .inset-podcast-logo .image-link > img:first-child:hover {
     opacity: 0.7;
     filter: brightness(90%) saturate(80%) hue-rotate(-10deg);
     transition: opacity 0.3s ease-in-out;
   }
 
+ 
+
+  .image-link img:not(:last-child):hover {
+    opacity: 0.7;
+    filter: brightness(90%) saturate(80%) hue-rotate(-10deg);
+    transition: opacity 0.3s ease-in-out;
+  }
 
 
 .text-sections-container {
@@ -222,9 +262,13 @@ ul {
     max-width: 450px;
     max-height: 500px;
     box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
-    border-radius: 10px;
+    border-radius: 20px;
     object-fit: cover;
   }
+
+.image-link.overlay{
+  transition-property: none;
+}
 
 .quote-container {
     display: flex;
@@ -250,19 +294,22 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  padding: 25px;
+  justify-content: space-evenly;
   border-radius: 10px;
+  line-height: 1.5;
   background: linear-gradient(to bottom right, #82c4c3, #52796f);
 }
 
 .cta-text h2 {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     letter-spacing: 7px;
     text-transform: uppercase;
     font-weight: -50%;
-    border-radius: 10px;
+    margin: 0;
+    
     
     
     
@@ -275,6 +322,7 @@ ul {
     align-items: center;
     transition: color 1s ease-in-out, letter-spacing 1s ease-in-out, background-color 0.5s ease-in-out;
     letter-spacing: 0.1em;
+    padding-bottom: 10px;
   }
   
   .cta-button a:hover {
