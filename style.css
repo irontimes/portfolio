@@ -3,6 +3,7 @@ body {
   color: rgb(37, 35, 35);
   
   
+  
 }
 
 html {
@@ -84,6 +85,12 @@ ul {
   color: rgb(24, 85, 70);
   transition: color 1s ease-in-out, transform 0.5s ease-in-out;
   transform: scale(1);
+  
+}
+
+.text-section p {
+  max-width: 800px;
+  
 }
 
 .text-section a:hover {
@@ -141,6 +148,7 @@ ul {
     width: 100%;
     height: auto;
     max-height: 200px;
+    max-width: 800px;
     border-radius: 25px;
     flex: 1;
     object-fit: cover;
@@ -299,7 +307,8 @@ ul {
   justify-content: space-evenly;
   border-radius: 10px;
   line-height: 2;
-  background: linear-gradient(to bottom right, #82c4c3, #52796f);
+  background: linear-gradient(to bottom right, #99bcd3, #3b6359);
+  
 }
 
 .cta-text h2 {
