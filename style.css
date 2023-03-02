@@ -84,7 +84,7 @@ ul {
     transition: color 1s ease-in-out;
     margin-right: 24px;
     border-radius: 5px;
-    border-color: #cad2c5;
+    border-color: ;
 }
 
 .text-section button:hover {
@@ -169,6 +169,7 @@ ul {
     position: relative;
 }
 
+
 .overlay {
   position: absolute;
   margin-top: 66%;
@@ -178,6 +179,7 @@ ul {
   bottom: 0;
   scale: 50%;
   border-radius: 77px;
+  opacity: 1;
 
 } 
 
@@ -198,6 +200,8 @@ ul {
     width: 450px;
 
 }
+
+/* Below class controls podcast inlay transition */
 
 .image-links-container img:hover {
     opacity: 0.7;
