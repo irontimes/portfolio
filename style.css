@@ -81,7 +81,7 @@ ul {
 
 .text-section a {
   text-decoration: none;
-  color: rgb(37, 121, 72);
+  color: rgb(24, 85, 70);
   transition: color 1s ease-in-out, transform 0.5s ease-in-out;
   transform: scale(1);
 }
@@ -98,6 +98,7 @@ ul {
 .text-section a:not(:hover) {
   transform: scale(1);
 }
+
 
 .text-section h2 {
     display: flex;
